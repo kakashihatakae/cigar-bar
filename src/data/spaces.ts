@@ -1,0 +1,58 @@
+import type { BookingSpace } from '../types'
+
+export const BOOKING_SPACES: BookingSpace[] = [
+  {
+    id: 'book-detail-1',
+    index: '01',
+    title: 'A corner of your own',
+    kicker: 'Semi-private · 10–24 guests',
+    capacity: '10–24 guests',
+    bestFor: 'Dinners, receptions',
+    desc: 'A reserved section off the main floor — close to the band, far enough to talk. Long tables, low light, and a server who knows the menu.',
+    image: {
+      src: '/assets/img/room-bar.jpg',
+      width: 1800,
+      height: 1199,
+      alt: 'Warm, low-lit bar with a long counter and bottles along the wall',
+    },
+    modifier: 'book-tile--bar',
+    ctaText: 'Enquire',
+    ctaHref: 'mailto:hola@cigarbar.example?subject=Private%20space%20at%20Cigar%20Bar',
+  },
+  {
+    id: 'book-detail-2',
+    index: '02',
+    title: 'The whole room',
+    kicker: 'Full buyout · 60–120 guests',
+    capacity: '60–120 guests',
+    bestFor: 'Parties, launches',
+    desc: "The floor, the bar, the kitchen, and the band — yours for the night. We'll build the menu and the set times around you.",
+    image: {
+      src: '/assets/img/gallery-havana.jpg',
+      width: 1800,
+      height: 1350,
+      alt: 'A couple dancing in a room with a live band behind them',
+    },
+    modifier: 'book-tile--room book-tile--feature',
+    ctaText: 'Plan a party',
+    ctaHref: 'mailto:hola@cigarbar.example?subject=Private%20party%20at%20Cigar%20Bar',
+  },
+  {
+    id: 'book-detail-3',
+    index: '03',
+    title: 'Dinner, then the floor',
+    kicker: 'Tables · 1–8 guests',
+    capacity: '1–8 guests',
+    bestFor: 'Dinner, dancing',
+    desc: 'Book a table for dinner and keep it through the first set. Walk-ins after ten when the floor allows.',
+    image: {
+      src: '/assets/img/tapas.jpg',
+      width: 1200,
+      height: 1800,
+      alt: 'Tapas plates and a glass of sangria on a wooden table',
+    },
+    modifier: 'book-tile--table',
+    ctaText: 'Reserve a table',
+    ctaHref: '#visit',
+  },
+]
